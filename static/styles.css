@@ -39,3 +39,76 @@ body {
 .menu a:hover {
     color: #76c7c0; /* Светло-голубой при наведении */
 }
+
+
+/* НАСТРОЙКИ*/
+.settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    padding: 20px;
+}
+
+.settings-form {
+    background-color: #2a3b59;
+    border-radius: 8px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.settings-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #76c7c0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1f2b;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.form-group input::placeholder {
+    color: #b0b8c8;
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 2px solid #76c7c0;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #76c7c0;
+    border: none;
+    border-radius: 5px;
+    color: #1a1f2b;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5da9a3;
+}

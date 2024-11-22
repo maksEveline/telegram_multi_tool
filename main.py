@@ -32,6 +32,15 @@ async def index():
         return render_template("error.html", error=str(e))
 
 
+@app.route("/settings")
+async def settings_page():
+    try:
+        return render_template("settings.html")
+    except Exception as e:
+        print(f"Error in index route: {e}")
+        return render_template("error.html", error=str(e))
+
+
 if __name__ == "__main__":
     start_func()
     app.run(debug=True, port=5055)
